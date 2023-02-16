@@ -1,147 +1,49 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  background: #eee3d0;
-  height: 100%;
-  padding: 30px;
-  width: 100%;
-}
-
-.circles {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  /* padding: 30px; */
-}
-
-.circle_one,
-.circle_two,
-.circle_three {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 17%;
-}
-
-.circles .membership_early_access {
-  align-items: center;
-  aspect-ratio: 1;
-  background: #e2503f;
-  border-radius: 999px;
-  display: flex;
-  font-weight: bold;
-  justify-content: center;
-  /* padding: 70px; */
-  width: 100%;
-}
-
-.circles .membership_products {
-  align-items: center;
-  aspect-ratio: 1;
-  background: #e2503f;
-  border-radius: 999px;
-  display: flex;
-  font-weight: bold;
-  justify-content: center;
-  width: 100%;
-}
-
-.circles .membership_free_shipping {
-  align-items: center;
-  aspect-ratio: 1;
-  display: flex;
-  background: #18181b;
-  border-radius: 999px;
-  font-weight: bold;
-  justify-content: center;
-  width: 100%;
-}
-
-.vertical_line_early_access,
-.vertical_line_products {
-  background: #e2503f;
-  display: flex;
-  flex-direction: column;
-  height: 40px;
-  width: 5px;
-}
-
-.vertical_line_free_shipping {
-  background: #18181b;
-  display: flex;
-  flex-direction: column;
-  height: 40px;
-  width: 5px;
-}
-
-/* Text in middle of circles */
-.circles .heading_bronze_font {
-  color: #aa9767;
-  font-size: 45px;
-  font-weight: 900;
-  letter-spacing: 3px;
-  margin: 30px;
-  text-align: center;
-}
-
-.circles .heading_bronze_silver {
-  color: #c1c5c8;
-  font-size: 45px;
-  font-weight: 900;
-  letter-spacing: 3px;
-  margin: 30px;
-  text-align: center;
-}
-
-.circles .heading_bronze_gold {
-  color: #daa900;
-  font-size: 45px;
-  font-weight: 900s;
-  letter-spacing: 3px;
-  margin: 30px;
-  text-align: center;
-}
-
-@media (max-width: 650px) {
-  .container {
+@media (min-width: 400px) {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .loyalty_status {
     background: #eee3d0;
     height: 100%;
     padding: 30px;
     width: 100%;
   }
 
-  .circles,
-  .circle_one,
-  .circle_two,
-  .circle_three {
+  .loyalty_flex_container {
     align-items: center;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    width: 70%;
-    /* padding: 30px; */
   }
 
-  /* .circle_one,
-  .circle_two,
-  .circle_three {
+  .loyalty_bronze_circle,
+  .loyalty_silver_circle,
+  .loyalty_gold_circle {
+    align-items: center;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: center;
+    width: 17%;
+  }
+
+  .loyalty_flex_container .early_access {
+    align-items: center;
+    aspect-ratio: 1;
+    background: #e2503f;
+    border-radius: 999px;
+    display: flex;
+    font-weight: bold;
     justify-content: center;
     width: 100%;
-  } */
+  }
 
-  .circles .membership_early_access {
+  .loyalty_flex_container .membership_products {
     align-items: center;
     aspect-ratio: 1;
     background: #e2503f;
@@ -149,20 +51,10 @@
     display: flex;
     font-weight: bold;
     justify-content: center;
-    /* padding: 70px; */
+    width: 100%;
   }
 
-  .circles .membership_products {
-    align-items: center;
-    aspect-ratio: 1;
-    background: #e2503f;
-    border-radius: 999px;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-  }
-
-  .circles .membership_free_shipping {
+  .loyalty_flex_container .free_shipping {
     align-items: center;
     aspect-ratio: 1;
     display: flex;
@@ -170,10 +62,10 @@
     border-radius: 999px;
     font-weight: bold;
     justify-content: center;
+    width: 100%;
   }
 
-  .vertical_line_early_access,
-  .vertical_line_products {
+  .vertical_line {
     background: #e2503f;
     display: flex;
     flex-direction: column;
@@ -189,28 +81,27 @@
     width: 5px;
   }
 
-  /* Text in middle of circles */
-  .circles .heading_bronze_font {
+  .loyalty_flex_container .loyalty_bronze_font {
     color: #aa9767;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 900;
     letter-spacing: 3px;
     margin: 30px;
     text-align: center;
   }
 
-  .circles .heading_bronze_silver {
+  .loyalty_flex_container .loyalty_silver_font {
     color: #c1c5c8;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 900;
     letter-spacing: 3px;
     margin: 30px;
     text-align: center;
   }
 
-  .circles .heading_bronze_gold {
+  .loyalty_flex_container .loyalty_gold_font {
     color: #daa900;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 900s;
     letter-spacing: 3px;
     margin: 30px;
