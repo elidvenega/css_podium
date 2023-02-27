@@ -1,110 +1,129 @@
-@media (min-width: 400px) {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  .loyalty_status {
-    background: #eee3d0;
-    height: 100%;
-    padding: 30px;
-    width: 100%;
-  }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.loyalty_status {
+  background: #eee3d0;
+  height: 100%;
+  padding: 30px;
+  width: 100%;
+}
+
+.loyalty_flex_container {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.loyalty_bronze_circle,
+.loyalty_silver_circle,
+.loyalty_gold_circle {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 50%;
+}
+
+.loyalty_flex_container .early_access {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #e2503f;
+  border-radius: 999px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.loyalty_flex_container .membership_products {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #e2503f;
+  border-radius: 999px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.loyalty_flex_container .free_shipping {
+  align-items: center;
+  aspect-ratio: 1;
+  display: flex;
+  background: #18181b;
+  border-radius: 999px;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.vertical_line {
+  background: #e2503f;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 5px;
+}
+
+.vertical_line_free_shipping {
+  background: #18181b;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 5px;
+}
+
+.loyalty_flex_container .loyalty_bronze_font {
+  color: #aa9767;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 30px;
+  text-align: center;
+}
+
+.loyalty_flex_container .loyalty_silver_font {
+  color: #c1c5c8;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 30px;
+  text-align: center;
+}
+
+.loyalty_flex_container .loyalty_gold_font {
+  color: #daa900;
+  font-size: 45px;
+  font-weight: 900s;
+  letter-spacing: 3px;
+  margin: 30px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
   .loyalty_flex_container {
     align-items: center;
     color: #fff;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
   }
-
   .loyalty_bronze_circle,
   .loyalty_silver_circle,
   .loyalty_gold_circle {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 17%;
-  }
-
-  .loyalty_flex_container .early_access {
-    align-items: center;
-    aspect-ratio: 1;
-    background: #e2503f;
-    border-radius: 999px;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .loyalty_flex_container .membership_products {
-    align-items: center;
-    aspect-ratio: 1;
-    background: #e2503f;
-    border-radius: 999px;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .loyalty_flex_container .free_shipping {
-    align-items: center;
-    aspect-ratio: 1;
-    display: flex;
-    background: #18181b;
-    border-radius: 999px;
-    font-weight: bold;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .vertical_line {
-    background: #e2503f;
-    display: flex;
-    flex-direction: column;
-    height: 40px;
-    width: 5px;
-  }
-
-  .vertical_line_free_shipping {
-    background: #18181b;
-    display: flex;
-    flex-direction: column;
-    height: 40px;
-    width: 5px;
-  }
-
-  .loyalty_flex_container .loyalty_bronze_font {
-    color: #aa9767;
-    font-size: 45px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    margin: 30px;
-    text-align: center;
-  }
-
-  .loyalty_flex_container .loyalty_silver_font {
-    color: #c1c5c8;
-    font-size: 45px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    margin: 30px;
-    text-align: center;
-  }
-
-  .loyalty_flex_container .loyalty_gold_font {
-    color: #daa900;
-    font-size: 45px;
-    font-weight: 900s;
-    letter-spacing: 3px;
-    margin: 30px;
-    text-align: center;
   }
 }
