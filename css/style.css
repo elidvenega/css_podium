@@ -11,23 +11,55 @@ body {
   max-width: 100%;
 }
 
-.loyalty_status {
+.loyalty_status_container {
   background: #eee3d0;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 1.2rem; */
 }
 
 .loyalty_flex_container {
   color: #fff;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: 100%;
+  /* align-items: flex-start; */;
   gap: 1.2rem;
+}
+
+
+.loyalty_bronze_circle .early_access {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #e2503f;
+  border-radius: 100%;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 50%;
+}
+
+/* 
+ height: 30vh;
+  width: 100%;
+*/
+.loyalty_silver_circle .membership_products {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #e2503f;
+  border-radius: 100%;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+ width: 50%;
+}
+
+.loyalty_gold_circle .free_shipping {
+  align-items: center;
+  aspect-ratio: 1;
+  display: flex;
+  background: #18181b;
+  border-radius: 100%;
+  font-weight: bold;
+  justify-content: center;
+  width: 50%;
 }
 
 .loyalty_bronze_circle,
@@ -36,42 +68,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-}
-
-.loyalty_bronze_circle .early_access {
-  align-items: center;
-  aspect-ratio: 1;
-  background: #e2503f;
-  border-radius: 100%;
-  display: flex;
-  flex: 100%;
-  font-weight: bold;
-  justify-content: center;
-  width: 13rem;
-}
-
-.loyalty_silver_circle .membership_products {
-  align-items: center;
-  aspect-ratio: 1;
-  background: #e2503f;
-  border-radius: 100%;
-  display: flex;
-  flex: 100%;
-  font-weight: bold;
-  justify-content: center;
-  width: 13rem;
-}
-
-.loyalty_gold_circle .free_shipping {
-  align-items: center;
-  aspect-ratio: 1;
-  display: flex;
-  flex: 100%;
-  background: #18181b;
-  border-radius: 100%;
-  font-weight: bold;
-  justify-content: center;
-  width: 13rem;
+  justify-content: flex-end;
 }
 
 .vertical_line {
@@ -79,7 +76,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   height: 0.6rem;
-  width: 10%;
+  width: 15%;
 }
 
 .vertical_line_free_shipping {
@@ -87,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 0.6rem;
-  width: 10%;
+  width: 15%;
 }
 
 .loyalty_bronze_font {
